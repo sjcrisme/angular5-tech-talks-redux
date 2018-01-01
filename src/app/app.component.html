@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-card class="top-block">
+  <h2>Tech Talks</h2>
+
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Title" value="">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Speaker" value="">
+    </mat-form-field>
+
+    <mat-checkbox>
+      High Rating
+    </mat-checkbox>
+  </form>
+</mat-card>
+
+<mat-card *ngFor='let item of items' class="talks-card">
+  <div class="rating-left">
+    <p>Rating</p>
+    <p><b>{{item.rating}}</b></p>
+  </div>
+  <div class="rating-right">
+    <h4><a>{{item.title}}</a></h4>
+    <p>{{item.speaker}}</p>
+  </div>    
+</mat-card>
