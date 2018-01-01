@@ -1,12 +1,11 @@
 # Angular5-Tech-Talks-Redux
 Inspired by <State in Angular Applications> with Victor Savkin(https://www.youtube.com/watch?v=H4EyuvGe_dg).
 I want create his demo progect and manage all issues from his speach.
-```
+
 TODO:
 1. - [x] ~~ create component with layout ~~
 2. - []  separete all to 3 components with route
 3. - []  add functions to top filter component
-```
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
 ### Development server
