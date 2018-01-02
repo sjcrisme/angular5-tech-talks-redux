@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes} from "@angular/router";
 
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
@@ -10,14 +11,20 @@ import { StoreRouterConnectingModule, RouterStateSerializer } from '@ngrx/router
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { MaterialModule } from './material.module';
+import { TechTalksComponent } from './tech-talks/tech-talks.component';
 // import { reducers, CustomSerializer } from './store/reducers';
 import { AppComponent } from './app.component';
 import { TalkService } from './http.service';
 
+const routes: Routes = [
+  { path: 'talks', component: 'TechTalksComponent'},
+  { path: '', component:'AppComponent'}
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TechTalksComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +32,7 @@ import { TalkService } from './http.service';
     MaterialModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    RouterModule.forRoot(routes),
     StoreModule.forRoot([]),
     EffectsModule.forRoot([]),
  //   StoreRouterConnectingModule,

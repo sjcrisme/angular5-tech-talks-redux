@@ -17,13 +17,4 @@
   </form>
 </mat-card>
 
-<mat-card *ngFor='let item of items' class="talks-card">
-  <div class="rating-left">
-    <p>Rating</p>
-    <p><b>{{item.rating}}</b></p>
-  </div>
-  <div class="rating-right">
-    <h4><a>{{item.title}}</a></h4>
-    <p>{{item.speaker}}</p>
-  </div>    
-</mat-card>
+<router-outlet></router-outlet>
