@@ -1,5 +1,5 @@
 # Angular5-Tech-Talks-Redux
-Inspired by <State in Angular Applications> with Victor Savkin(https://www.youtube.com/watch?v=H4EyuvGe_dg).
+Inspired by "State in Angular Applications" with Victor Savkin(https://www.youtube.com/watch?v=H4EyuvGe_dg).
 I want create his demo progect and manage all issues from his speach.
 
 TODO:
