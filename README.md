@@ -3,7 +3,7 @@ Inspired by "State in Angular Applications" with Victor Savkin(https://www.youtu
 I want create his demo progect and manage all issues from his speach.
 
 TODO:
-1. - [x] ~~ create component with layout ~~
+1. - [x] ~~create component with layout~~
 2. - [x]  ~~separete all to 3 components with route~~
 3. - []  add functions to top filter component
 4. - []  add user rate the talks
