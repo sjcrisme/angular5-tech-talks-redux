@@ -13,6 +13,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { MaterialModule } from './material.module';
 import { TechTalksComponent  } from './tech-talks/tech-talks.component';
 import { TalkDetailComponent } from './talk-details/talk-details.component';
+import { FilterComponent } from './filter/filter.component';
 // import { reducers, CustomSerializer } from './store/reducers';
 import { AppComponent } from './app.component';
 import { TalkService } from './http.service';
@@ -27,7 +28,8 @@ import { TalkService } from './http.service';
   declarations: [
     AppComponent,
     TechTalksComponent,
-    TalkDetailComponent
+    TalkDetailComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,

@@ -4,8 +4,10 @@ I want create his demo progect and manage all issues from his speach.
 
 TODO:
 1. - [x] ~~ create component with layout ~~
-2. - []  separete all to 3 components with route
+2. - [x]  ~~separete all to 3 components with route~~
 3. - []  add functions to top filter component
+4. - []  add user rate the talks
+5. - []  create Store
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
 ### Development server
