@@ -11,20 +11,23 @@ import { StoreRouterConnectingModule, RouterStateSerializer } from '@ngrx/router
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { MaterialModule } from './material.module';
-import { TechTalksComponent } from './tech-talks/tech-talks.component';
+import { TechTalksComponent  } from './tech-talks/tech-talks.component';
+import { TalkDetailComponent } from './talk-details/talk-details.component';
 // import { reducers, CustomSerializer } from './store/reducers';
 import { AppComponent } from './app.component';
 import { TalkService } from './http.service';
 
-const routes: Routes = [
-  { path: 'talks', component: 'TechTalksComponent'},
-  { path: '', component:'AppComponent'}
+ const routes: Routes = [
+  { path: '', redirectTo: '/talks', pathMatch: 'full' },
+  { path: 'talks', component: TechTalksComponent },
+  { path: 'talk/:id', component: TalkDetailComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    TechTalksComponent
+    TechTalksComponent,
+    TalkDetailComponent
   ],
   imports: [
     BrowserModule,
