@@ -1,1 +1,19 @@
-<p>Detail</p>
+<h2>Tech Talks</h2>
+
+<mat-card>
+    <div class="left">
+        <h4>Rating</h4>
+        <p>{{task?.rating}}</p>
+    </div>
+    <div class="right">
+        <h3>{{task?.title }}</h3>
+        <h5>{{task?.speaker }}</h5>
+        <p>{{task?.description }}</p>
+        <div class="gbuttons">
+            <button  mat-raised-button>Watch</button>
+            <button  mat-raised-button>Rate</button>
+        </div>
+    </div>
+    
+</mat-card>
+<!-- TODO: remove this task? to better code -->

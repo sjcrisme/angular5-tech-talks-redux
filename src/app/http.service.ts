@@ -2,8 +2,10 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { catchError, map } from 'rxjs/operators';
+import { Talks } from './store/talks.model';
 
 const API_ENDPOINT = 'http://localhost:3000/talks';
+
 
 @Injectable()
 export class TalkService {
@@ -15,8 +17,8 @@ export class TalkService {
         return this.http.get(API_ENDPOINT);
     }
 
-    getTalk(id) {
-        return this.http.get(`${API_ENDPOINT}/${id}`)
+    getTalk(id){
+        return this.http.get<Talks>(`${API_ENDPOINT}/${id}`)
         .pipe(
             map(res => res),
             catchError(this.handleError));
