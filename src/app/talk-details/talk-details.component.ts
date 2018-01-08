@@ -12,7 +12,7 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./talk-details.component.css']
 })
 export class TalkDetailComponent implements OnInit {
-  task: Observable<Talks>;
+  task: Talks;
   id:number;
   constructor(public talkservice:TalkService,
               private route: ActivatedRoute
