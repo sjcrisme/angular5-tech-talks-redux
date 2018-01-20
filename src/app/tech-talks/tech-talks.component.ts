@@ -10,6 +10,7 @@ import { Talks } from './../store/talks.model';
 })
 export class TechTalksComponent implements OnInit {
   items: any;
+  sometext ='';
   constructor(public talkservice:TalkService) { }
 
   ngOnInit() {
@@ -19,4 +20,9 @@ export class TechTalksComponent implements OnInit {
       }
     );
   }
+
+  onNotify(message:string):void {
+    this.sometext = message + "+ что то новое из родителя";    
+   //  alert(" >>> " + message);
+   }
 }

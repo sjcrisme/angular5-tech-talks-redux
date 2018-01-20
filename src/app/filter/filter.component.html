@@ -1,13 +1,15 @@
-<form class="example-form">
+<form class="example-form" #filterForm="ngForm" [ngFormOptions]="{ updateOn: 'blur' }" (ngSubmit)="onSubmit()">
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Title" value="">
+      <input matInput placeholder="Title" value=""  [(ngModel)]="model.title" name="name">
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Speaker" value="">
+      <input matInput placeholder="Speaker" value="" [(ngModel)]="model.speaker" name="speaker">
     </mat-form-field>
 
-    <mat-checkbox>
+    <mat-checkbox [(ngModel)]="model.highRating" name="highRating">
       High Rating
     </mat-checkbox>
+
+    <button  mat-raised-button (click)="onClick()">Test Event</button>
   </form>
